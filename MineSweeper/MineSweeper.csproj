@@ -43,12 +43,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\CellFactory.cs" />
+    <Compile Include="Helpers\DrawHelper.cs" />
+    <Compile Include="Helpers\FieldFactory.cs" />
+    <Compile Include="Model\AbstractCell.cs" />
+    <Compile Include="Model\Field.cs" />
+    <Compile Include="Model\HintCell.cs" />
+    <Compile Include="Model\MineCell.cs" />
+    <Compile Include="Workflow\ComputationWorkflow.cs" />
+    <Compile Include="Workflow\ExecutionContext.cs" />
+    <Compile Include="Model\FieldDescriptor.cs" />
+    <Compile Include="Workflow\InputWorkflow.cs" />
+    <Compile Include="Exceptions\FieldException.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Workflow\OutputWorkflow.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
